@@ -1,6 +1,4 @@
-mock "tfplan/v2" {
-  module {
-    source = "mock-tfplan-v2.sentinel"
-  }
+policy "always-passes" {
+ source            = "./always-passes.sentinel"
+ enforcement_level = "hard-mandatory"
 }
-
